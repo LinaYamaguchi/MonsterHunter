@@ -1,0 +1,137 @@
+
+#big-video {
+    position: relative;
+    width: 1470px;
+    height: 880px;
+    border: solid;
+}
+
+#new-update1 {
+    position: absolute;
+    border: 1px solid white;
+    box-shadow: 0 0 7px rgb(70, 70, 73);
+    text-align: center;
+    width:550px;
+    height:120px;
+    top: 680px;
+    left: 170px;
+}
+
+#new-update2 {
+    position: absolute;
+    border: 1px solid white;
+    box-shadow: 0 0 7px rgb(70, 70, 73);
+    text-align: center;
+    width:550px;
+    height:120px;
+    top: 680px;
+    right: 170px;
+}
+
+#first-info {
+    border: none;
+    width: 1142px;
+    margin: auto;
+    text-align: center;
+}
+
+#update-info {
+    border: 1px solid white;
+    box-shadow: 0 0 7px rgb(70, 70, 73);
+    margin: 8px;
+    margin-top: 35px;
+    width: 1124px;
+    height: 70px;
+    font-size: 20px;
+    color: yellow;
+    background-color: rgb(24, 69, 95);
+    text-align: center;
+}
+
+.blue {
+    text-align: center;
+    display: inline-block;
+    margin: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 7px rgb(70, 70, 73);
+    border: 1px solid white;
+    width: 550px;
+    height: 80px;
+    font-size: 18px;
+    color: yellow;
+    background-color: rgb(47, 170, 241);
+}
+
+.small-date {
+    color: white;
+    font-size: 13px;
+}
+
+.headline {
+    border: double;
+    width: 800px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(4, 18, 65);
+    margin: 30px auto 30px auto;
+    background-color: rgba(155, 187, 219, 0.2);
+}
+
+.small-japanese {
+    font-size: 20px;
+}
+
+.catalog-button {
+    text-align: center;
+    width: 270px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0 0 7px rgb(70, 70, 73);
+    background-color: rgba(25, 166, 231, 0.705);
+}
+
+.catalog{
+    border: none;
+    text-align: center;
+    margin: 30px;
+}
+
+#news-slide {
+    width: 1320px;
+    margin: 65px auto;
+    text-align: center;
+}
+
+.move-to {
+    border: solid black;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    font-size: 26px;
+}
+.news {
+    display: inline-block;
+    border: solid white;
+    margin: 5px;
+    box-shadow: 0 0 7px rgb(70, 70, 73);
+    width: 280px;
+    height: 200px;
+}
+
+
+
+#intro-explanation{
+    border: none;
+    float: right;
+    width: 700px;
+    background-color: rgb(236, 242, 248);
+}
+.intro1 {
+    font-size: 27px;
+}
+
+.intro2 {
+    font-size: 17px;
+}
