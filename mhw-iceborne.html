@@ -8,23 +8,50 @@
 
   <body>
     <header>
-      <a href="#headline-products" id="buy-now"
-        ><strong>BUY NOW</strong><span>好評発売中</span></a
-      >
+      <a href="#headline-products" id="buy-now">
+        <p>BUY NOW</p>
+        <p>好評発売中</p></a>
       <menu href="">MENU</menu>
     </header>
-    <div id="big-video">
+    <iframe
+      id="big-video"
+      src="https://www.youtube.com/embed/lxUgXT_uUDc?modestbranding=1&controls=0&autoplay=1&loop=1"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      height="848"
+    >
+    </iframe>
+    <div id="ps4-logo">
       <img
-        src="https://sce.scene7.com/is/image/playstation/monster-hunter-world_A_3840_2160"
+        src="http://www.capcom.co.jp/monsterhunter/world-iceborne/ps4/assets/img/common/common/logo_ps4_white.png"
       />
-      <div id="new-update1">
-        無料タイトルアップデート第一弾配信中！追加モンスター「ラージャン」登場！
-      </div>
-      <div id="new-update2">
-        高い防御性能で、序盤の狩猟生活をサポートしてくれる「ガーディアン装備」を無料配布！
-      </div>
     </div>
-
+    <div id="iceborne-logo">
+      <img
+        src="http://www.capcom.co.jp/monsterhunter/world-iceborne/ps4/assets/img/ja/common/logo_iceborne_l.png"
+      />
+    </div>
+    <div id="first-p">
+      <p>
+        「モンスターハンター：ワールド」超大型拡張コンテンツ
+      </p>
+      <p>
+        好評発売中
+       </p>
+    </div>
+    </div>
+    <div id="new-update1">
+      <img src="http://www.capcom.co.jp/monsterhunter/world-iceborne/ps4/assets/img/ja/news/ja_41.jpg">
+      <p>
+        無料大型タイトルアップデート第2弾配信決定！追加モンスター「ジンオウガ亜種」登場！
+      </p>    
+    </div>
+    <div id="new-update2">
+      <img src="http://www.capcom.co.jp/monsterhunter/world-iceborne/ps4/assets/img/ja/news/ja_38.jpg">
+      <p>  
+        「MHW」のストーリークリアまで使える強力な「武器」や「防具」を無料配布！
+      </p>
+    </div>
     <section id="first-info">
       <button id="update-info">アップデート情報</button>
       <button class="blue">
@@ -42,26 +69,44 @@
     </div>
 
     <div id="news">
-      <button class="move-to">←</button>
-      <ul id="news-slide">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-      </ul>
-      <button class="move-to">→</button>
+        <button class="move-to" onclick="moveToLeft()">←</button>
+        <div id="visible-slide">
+          <ul id="news-slide">
+            <li><img src="http://www.capcom.co.jp/monsterhunter/world-iceborne/topics/e-jang/images/img02.jpg">
+              SNSなどで自由に使えるモンスター「ラージャン」等の公式画像を配信！</li>
+              <li><img src="http://www.capcom.co.jp/monsterhunter/world-iceborne/ps4/assets/img/ja/news/ja_19.jpg">
+                『Horizon Zero Dawn™凍てついた大地』スペシャルコラボイベントクエスト第1弾開催中！</li>
+                <li><img src="http://www.capcom.co.jp/monsterhunter/world-iceborne/ps4/assets/img/ja/news/ja_40.jpg">
+                  『モンスターハンターワールド：アイスボーン』追加コンテンツダウンロードカード購入キャンペーンを期間限定で実施！</li>
+                  <li><img src="http://www.capcom.co.jp/monsterhunter/world-iceborne/ps4/assets/img/ja/news/ja_39.jpg">
+                    期間限定（12/2（月）まで）で、ゲーム本編やダウンロードコンテンツのセール実施中！</li>
+                    <li><img src="http://www.capcom.co.jp/monsterhunter/world-iceborne/ps4/assets/img/ja/news/ja_37.jpg">
+                    MHフェスタ'19-'20東京会場開催記念！アイテムパック</li>
+                    <li><img src="http://www.capcom.co.jp/monsterhunter/world-iceborne/ps4/assets/img/ja/news/ja_36.jpg">
+                    『ユニバーサル・クールジャパン2020』に「モンスターハンター」シリーズ初の次世代体験型VRアトラクションが登場！</li>
+                  </ul>
+          </div>
+          <button class="move-to" onclick="moveToRight()">→</button>
     </div>
 
-    <ul id="slide-button">
-      <li>◆</li>
-      <li>◆</li>
-      <li>◆</li>
-      <li>◆</li>
-      <li>◆</li>
-      <li>◆</li>
-    </ul>
+    <div class="square-slide-button">
+      <ul class="slide-button">
+        <li>◆</li>
+        <li>◆</li>
+        <li>◆</li>
+        <li>◆</li>
+        <li>◆</li>
+        <li>◆</li>
+      </ul>
+      <ul class=slide-button-hover>
+        <li>◆</li>
+        <li>◆</li>
+        <li>◆</li>
+        <li>◆</li>
+        <li>◆</li>
+        <li>◆</li>
+      </ul>
+    </div>
 
     <div class="catalog">
       <button class="catalog-button">News一覧はこちら ➣</button>
@@ -70,6 +115,26 @@
     <div class="headline">
       Media <span class="small-japanese">メディア</span>
     </div>
+
+    <div class="square-slide-button">
+        <ul class="slide-button">
+          <li>◆</li>
+          <li>◆</li>
+          <li>◆</li>
+          <li>◆</li>
+          <li>◆</li>
+          <li>◆</li>
+        </ul>
+        <ul class=slide-button-hover>
+          <li>◆</li>
+          <li>◆</li>
+          <li>◆</li>
+          <li>◆</li>
+          <li>◆</li>
+          <li>◆</li>
+        </ul>
+      </div>
+
     <div class="catalog">
       <button class="catalog-button">Media一覧はこちら ➣</button>
     </div>
@@ -99,64 +164,63 @@
       New Element <span class="small-japanese">新要素</span>
     </div>
 
-    <div class="headline">
-      <a id="headline-products">
-        Products <span class="small-japanese">製品情報</span>
-      </a>
+    <div class="headline" id="headline-products">
+     Products <span class="small-japanese">製品情報</span>
     </div>
-    <p>本作は、「モンスターハンター：ワールド」の超大型拡張コンテンツです。</p>
-  </body>
-</html>
+    <p class="article-text">本作は、「モンスターハンター：ワールド」の超大型拡張コンテンツです。</p>
+    
 
-<div id="footer">
-  <footer>
-    <p id="to-mhw">
-      モンスターハンター：ワールド　公式サイトへ
-      <a href="http://www.capcom.co.jp/monsterhunter/world/">
-        <img
-          id="mhw"
-          src="http://www.capcom.co.jp/monsterhunter/world-iceborne/ps4/assets/img/common/common/logo_mhw.png"
-      /></a>
-    </p>
-    <img id="ps" src="http://www.capcom.co.jp/common/logo/tmp/psf_b.png" />
-    <img id="ps4" src="http://www.capcom.co.jp/common/logo/tmp/ps4_b.png" />
-    <p class="footer-p">
-      PlayStation family logo
-      mark"PlayStation"およびps4は株式会社ソニー・インタラクティブエンタテインメントの登録商標または商標です。<br />
-      ©Valve Corporation. Steam logo are trademarks and/or registered trademarks
-      of Valve Corporation in the U.S. and/or other countries.
-    </p>
-    <ul>
-      <li class="link-list">
-        <a href="http://www.capcom.co.jp/game/">
-          ゲームポータル
-        </a>
-      </li>
-      <li class="link-list">
-        <a href="http://www.e-capcom.com/">
-          ショッピング
-        </a>
-      </li>
-      <li class="link-list">
-        <a href="http://www.capcom.co.jp/game/fan/">
-          マイカプコン
-        </a>
-      </li>
-      <li class="link-list">
-        <a href="http://www.capcom.co.jp/support/">
-          サポート
-        </a>
-      </li>
-      <li class="link-list">
-        <a href="http://www.capcom.co.jp/site/">
-          サイトのご利用について
-        </a>
-      </li>
-    </ul>
-    <img
+    <footer>
+          <p id="to-mhw">
+            モンスターハンター：ワールド　公式サイトへ
+            <a href="http://www.capcom.co.jp/monsterhunter/world/">
+          <img
+            id="mhw"
+            src="http://www.capcom.co.jp/monsterhunter/world-iceborne/ps4/assets/img/common/common/logo_mhw.png"
+        /></a>
+      </p>
+      <img id="ps" src="http://www.capcom.co.jp/common/logo/tmp/psf_b.png" />
+      <img id="ps4" src="http://www.capcom.co.jp/common/logo/tmp/ps4_b.png" />
+      <p class="footer-p">
+        PlayStation family logo
+        mark"PlayStation"およびps4は株式会社ソニー・インタラクティブエンタテインメントの登録商標または商標です。<br />
+        ©Valve Corporation. Steam logo are trademarks and/or registered trademarks
+        of Valve Corporation in the U.S. and/or other countries.
+      </p>
+      <ul>
+        <li class="link-list">
+          <a href="http://www.capcom.co.jp/game/">
+            ゲームポータル
+          </a>
+        </li>
+        <li class="link-list">
+          <a href="http://www.e-capcom.com/">
+            ショッピング
+          </a>
+        </li>
+        <li class="link-list">
+          <a href="http://www.capcom.co.jp/game/fan/">
+            マイカプコン
+          </a>
+        </li>
+        <li class="link-list">
+          <a href="http://www.capcom.co.jp/support/">
+            サポート
+          </a>
+        </li>
+        <li class="link-list">
+          <a href="http://www.capcom.co.jp/site/">
+            サイトのご利用について
+          </a>
+        </li>
+      </ul>
+      <img
       id="capcom"
       src="http://www.capcom.co.jp/common/logo/tmp/capcom_c_f.png"
-    />
-    <p class="footer-p">©CAPCOM CO., LTD. 2018, 2019 ALL RIGHTS RESERVED.</p>
-  </footer>
-</div>
+      />
+      <p class="footer-p">©CAPCOM CO., LTD. 2018, 2019 ALL RIGHTS RESERVED.</p>
+    </footer>
+
+
+  </body>
+</html>
